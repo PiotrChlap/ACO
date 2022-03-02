@@ -10,7 +10,7 @@ distancePlaces = []
 bestAnt = None
 chanceRandomPlace = 0.3
 alfa = 1
-beta = 1
+beta = 3
 numberIterations = 1000
 evaporationRate = 0.1
 
@@ -115,13 +115,13 @@ def updatePheromone():
 
 
 if __name__ == '__main__':
-    for i in range(5):
+    for i in range(2):
         places = []
         tracePheromone = []
         cologne = []
         distancePlaces = []
         bestAnt = None
-        files = open("P-n76-k5.txt", "r")
+        files = open("A-n80-k10.txt", "r")
         for x in files:
             tmp = x.split()
             name =[]
